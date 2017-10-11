@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="2968.031235309829" y="930.5">combattool.model.Heal</node>
+    <node x="785.4820178952982" y="1417.5">combattool.controller.CharacterController</node>
+    <node x="1903.025" y="919.0">combattool.controller.AbilityFactory</node>
+    <node x="1104.025" y="919.0">combattool.controller.CharacterFactory</node>
+    <node x="2718.025" y="1217.0">combattool.controller.AbilityController</node>
+    <node x="2733.9726175213664" y="45.0">combattool.model.Ability</node>
+    <node x="174.6340130876065" y="1194.0">combattool.model.TargetBehaviour</node>
+    <node x="1363.525" y="1217.0">combattool.controller.ReadFile</node>
+    <node x="751.6500000000001" y="1205.0">combattool.model.GameState</node>
+    <node x="0.0" y="1406.0">combattool.model.MultiTarget</node>
+    <node x="353.0" y="1406.0">combattool.model.SingleTarget</node>
+    <node x="1591.025" y="607.5">combattool.model.NonPlayer</node>
+    <node x="578.5820178952981" y="853.0">combattool.model.Team</node>
+    <node x="3022.781235309829" y="584.5">combattool.model.EffectBehaviour</node>
+    <node x="2075.475679754273" y="485.0">combattool.model.AbilityStats</node>
+    <node x="1056.025" y="607.5">combattool.model.Player</node>
+    <node x="1601.525" y="1785.0">combattool.controller.Main</node>
+    <node x="2320.025" y="832.0">combattool.view.UserInterface</node>
+    <node x="1545.525" y="1593.0">combattool.controller.GameController</node>
+    <node x="1034.6253952991442" y="0.0">combattool.model.GameCharacter</node>
+    <node x="3141.031235309829" y="930.5">combattool.model.Damage</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="combattool.controller.GameController" target="combattool.controller.AbilityController">
+      <point x="114.61538461538453" y="-71.0" />
+      <point x="1809.1403846153846" y="1563.0" />
+      <point x="3109.809013087606" y="1563.0" />
+      <point x="3109.809013087606" y="1386.0" />
+      <point x="3191.3583333333336" y="1386.0" />
+      <point x="189.33333333333348" y="48.0" />
+    </edge>
+    <edge source="combattool.model.Damage" target="combattool.model.Ability">
+      <point x="42.75" y="-37.5" />
+      <point x="3269.281235309829" y="812.0" />
+      <point x="3259.406235309829" y="812.0" />
+      <point x="3259.406235309829" y="305.0" />
+      <point x="2883.5976175213664" y="305.0" />
+      <point x="64.125" y="92.5" />
+    </edge>
+    <edge source="combattool.controller.AbilityFactory" target="combattool.model.AbilityStats">
+      <point x="132.33333333333348" y="-49.0" />
+      <point x="2233.8583333333336" y="812.0" />
+      <point x="2251.975679754273" y="812.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="combattool.model.Team" target="combattool.model.GameCharacter">
+      <point x="80.75" y="-115.0" />
+      <point x="820.8320178952981" y="812.0" />
+      <point x="718.1003952991445" y="812.0" />
+      <point x="718.1003952991445" y="395.0" />
+      <point x="1146.4330876068366" y="395.0" />
+      <point x="-49.69230769230762" y="137.5" />
+    </edge>
+    <edge source="combattool.model.EffectBehaviour" target="combattool.model.Ability">
+      <point x="-55.25" y="-49.0" />
+      <point x="3078.031235309829" y="325.0" />
+      <point x="2855.0976175213664" y="325.0" />
+      <point x="35.625" y="92.5" />
+    </edge>
+    <edge source="combattool.model.SingleTarget" target="combattool.model.TargetBehaviour">
+      <point x="-110.66666666666669" y="-48.5" />
+      <point x="408.33333333333326" y="1386.0" />
+      <point x="423.6340130876065" y="1386.0" />
+      <point x="83.0" y="71.0" />
+    </edge>
+    <edge source="combattool.controller.CharacterController" target="combattool.model.Team">
+      <point x="-259.20000000000016" y="-37.0" />
+      <point x="814.282017895298" y="1386.0" />
+      <point x="730.1500000000001" y="1386.0" />
+      <point x="730.1500000000001" y="1164.0" />
+      <point x="764.9281717414519" y="1164.0" />
+      <point x="24.84615384615381" y="115.0" />
+    </edge>
+    <edge source="combattool.controller.AbilityController" target="combattool.model.Team">
+      <point x="-252.44444444444434" y="-48.0" />
+      <point x="2749.5805555555557" y="1134.0" />
+      <point x="889.1589409722212" y="1134.0" />
+      <point x="149.0769230769231" y="115.0" />
+    </edge>
+    <edge source="combattool.model.AbilityStats" target="combattool.model.Ability">
+      <point x="0.0" y="-148.5" />
+      <point x="2251.975679754273" y="455.0" />
+      <point x="2798.0976175213664" y="455.0" />
+      <point x="-21.375" y="92.5" />
+    </edge>
+    <edge source="combattool.controller.GameController" target="combattool.controller.ReadFile">
+      <point x="-22.923076923076906" y="-71.0" />
+      <point x="1671.6019230769232" y="1573.0" />
+      <point x="1683.525" y="1573.0" />
+      <point x="1683.525" y="1366.0" />
+      <point x="1634.775" y="1366.0" />
+      <point x="54.25" y="48.0" />
+    </edge>
+    <edge source="combattool.controller.CharacterController" target="combattool.controller.ReadFile">
+      <point x="86.40000000000009" y="-37.0" />
+      <point x="1159.8820178952983" y="1356.0" />
+      <point x="1417.775" y="1356.0" />
+      <point x="-162.75" y="48.0" />
+    </edge>
+    <edge source="combattool.controller.AbilityController" target="combattool.model.Damage">
+      <point x="252.44444444444434" y="-48.0" />
+      <point x="3254.4694444444444" y="1174.0" />
+      <point x="3269.281235309829" y="1174.0" />
+      <point x="42.75" y="37.5" />
+    </edge>
+    <edge source="combattool.controller.CharacterController" target="combattool.model.GameState">
+      <point x="-86.40000000000009" y="-37.0" />
+      <point x="987.0820178952981" y="1386.0" />
+      <point x="954.1500000000001" y="1386.0" />
+      <point x="67.5" y="60.0" />
+    </edge>
+    <edge source="combattool.model.Damage" target="combattool.model.EffectBehaviour">
+      <point x="-42.75" y="-37.5" />
+      <point x="3183.781235309829" y="812.0" />
+      <point x="3188.531235309829" y="812.0" />
+      <point x="55.25" y="49.0" />
+    </edge>
+    <edge source="combattool.controller.ReadFile" target="combattool.controller.CharacterFactory">
+      <point x="-62.0" y="-48.0" />
+      <point x="1518.525" y="1144.0" />
+      <point x="1453.525" y="1144.0" />
+      <point x="116.5" y="49.0" />
+    </edge>
+    <edge source="combattool.controller.AbilityController" target="combattool.model.Heal">
+      <point x="63.11111111111131" y="-48.0" />
+      <point x="3065.1361111111114" y="1164.0" />
+      <point x="3006.281235309829" y="1164.0" />
+      <point x="-38.25" y="37.5" />
+    </edge>
+    <edge source="combattool.controller.AbilityController" target="combattool.model.NonPlayer">
+      <point x="-126.22222222222217" y="-48.0" />
+      <point x="2875.802777777778" y="1174.0" />
+      <point x="2859.2655996260687" y="1174.0" />
+      <point x="2859.2655996260687" y="802.0" />
+      <point x="1809.275" y="802.0" />
+      <point x="72.75" y="26.0" />
+    </edge>
+    <edge source="combattool.controller.AbilityController" target="combattool.model.GameCharacter">
+      <point x="-63.11111111111086" y="-48.0" />
+      <point x="2938.9138888888892" y="1164.0" />
+      <point x="2870.2655996260687" y="1164.0" />
+      <point x="2870.2655996260687" y="355.0" />
+      <point x="1345.2023183760675" y="355.0" />
+      <point x="149.0769230769231" y="137.5" />
+    </edge>
+    <edge source="combattool.model.TargetBehaviour" target="combattool.model.Team">
+      <point x="0.0" y="-71.0" />
+      <point x="340.6340130876065" y="1154.0" />
+      <point x="615.8512486645288" y="1154.0" />
+      <point x="-124.23076923076928" y="115.0" />
+    </edge>
+    <edge source="combattool.controller.ReadFile" target="combattool.model.GameCharacter">
+      <point x="0.0" y="-48.0" />
+      <point x="1580.525" y="385.0" />
+      <point x="1270.6638568376056" y="385.0" />
+      <point x="74.53846153846143" y="137.5" />
+    </edge>
+    <edge source="combattool.model.SingleTarget" target="combattool.model.Team">
+      <point x="110.66666666666652" y="-48.5" />
+      <point x="629.6666666666665" y="1386.0" />
+      <point x="611.4471514423071" y="1386.0" />
+      <point x="611.4471514423071" y="1174.0" />
+      <point x="665.5435563568367" y="1174.0" />
+      <point x="-74.53846153846143" y="115.0" />
+    </edge>
+    <edge source="combattool.controller.AbilityController" target="combattool.model.Ability">
+      <point x="0.0" y="-48.0" />
+      <point x="3002.025" y="1174.0" />
+      <point x="2957.531235309829" y="1174.0" />
+      <point x="2957.531235309829" y="345.0" />
+      <point x="2826.5976175213664" y="345.0" />
+      <point x="7.125" y="92.5" />
+    </edge>
+    <edge source="combattool.model.GameState" target="combattool.model.Team">
+      <point x="67.5" y="-60.0" />
+      <point x="954.1500000000001" y="1174.0" />
+      <point x="839.4666332799135" y="1174.0" />
+      <point x="99.38461538461536" y="115.0" />
+    </edge>
+    <edge source="combattool.model.NonPlayer" target="combattool.model.GameCharacter">
+      <point x="0.0" y="-26.0" />
+      <point x="1736.525" y="375.0" />
+      <point x="1295.5100106837594" y="375.0" />
+      <point x="99.38461538461524" y="137.5" />
+    </edge>
+    <edge source="combattool.model.MultiTarget" target="combattool.model.GameCharacter">
+      <point x="-110.66666666666674" y="-48.5" />
+      <point x="55.33333333333326" y="1386.0" />
+      <point x="123.35171073717947" y="1386.0" />
+      <point x="123.35171073717947" y="355.0" />
+      <point x="1047.0484722222213" y="355.0" />
+      <point x="-149.0769230769231" y="137.5" />
+    </edge>
+    <edge source="combattool.model.SingleTarget" target="combattool.model.GameCharacter">
+      <point x="0.0" y="-48.5" />
+      <point x="518.7670619658111" y="375.0" />
+      <point x="1096.740779914529" y="375.0" />
+      <point x="-99.38461538461547" y="137.5" />
+    </edge>
+    <edge source="combattool.controller.AbilityController" target="combattool.view.UserInterface">
+      <point x="-189.33333333333348" y="-48.0" />
+      <point x="2812.6916666666666" y="1124.0" />
+      <point x="2649.9" y="1124.0" />
+      <point x="141.375" y="136.0" />
+    </edge>
+    <edge source="combattool.model.Heal" target="combattool.model.EffectBehaviour">
+      <point x="38.25" y="-37.5" />
+      <point x="3082.781235309829" y="812.0" />
+      <point x="3078.031235309829" y="812.0" />
+      <point x="-55.25" y="49.0" />
+    </edge>
+    <edge source="combattool.controller.CharacterController" target="combattool.controller.AbilityController">
+      <point x="259.20000000000005" y="-37.0" />
+      <point x="1332.6820178952983" y="1386.0" />
+      <point x="2812.6916666666666" y="1386.0" />
+      <point x="-189.33333333333348" y="48.0" />
+    </edge>
+    <edge source="combattool.controller.ReadFile" target="combattool.model.Ability">
+      <point x="62.0" y="-48.0" />
+      <point x="1642.525" y="1154.0" />
+      <point x="1892.525" y="1154.0" />
+      <point x="1892.525" y="425.0" />
+      <point x="2755.3476175213664" y="425.0" />
+      <point x="-64.125" y="92.5" />
+    </edge>
+    <edge source="combattool.model.MultiTarget" target="combattool.model.Team">
+      <point x="0.0" y="-48.5" />
+      <point x="166.0" y="1386.0" />
+      <point x="134.35171073717947" y="1386.0" />
+      <point x="134.35171073717947" y="1144.0" />
+      <point x="591.005094818375" y="1144.0" />
+      <point x="-149.0769230769231" y="115.0" />
+    </edge>
+    <edge source="combattool.controller.ReadFile" target="combattool.model.Team">
+      <point x="-186.0" y="-48.0" />
+      <point x="1394.525" y="1164.0" />
+      <point x="864.3127871260674" y="1164.0" />
+      <point x="124.23076923076928" y="115.0" />
+    </edge>
+    <edge source="combattool.model.Heal" target="combattool.model.Ability">
+      <point x="-38.25" y="-37.5" />
+      <point x="3006.281235309829" y="812.0" />
+      <point x="3011.656235309829" y="812.0" />
+      <point x="3011.656235309829" y="335.0" />
+      <point x="2840.8476175213664" y="335.0" />
+      <point x="21.375" y="92.5" />
+    </edge>
+    <edge source="combattool.model.TargetBehaviour" target="combattool.model.GameCharacter">
+      <point x="-110.66666666666674" y="-71.0" />
+      <point x="229.96734642093975" y="1134.0" />
+      <point x="227.43372863247782" y="1134.0" />
+      <point x="227.43372863247782" y="365.0" />
+      <point x="1071.8946260683751" y="365.0" />
+      <point x="-124.23076923076928" y="137.5" />
+    </edge>
+    <edge source="combattool.model.Player" target="combattool.model.GameCharacter">
+      <point x="0.0" y="-26.0" />
+      <point x="1188.525" y="405.0" />
+      <point x="1196.1253952991442" y="405.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="combattool.controller.CharacterFactory" target="combattool.model.GameCharacter">
+      <point x="58.25" y="-49.0" />
+      <point x="1395.275" y="812.0" />
+      <point x="1342.525" y="812.0" />
+      <point x="1342.525" y="395.0" />
+      <point x="1245.8177029914518" y="395.0" />
+      <point x="49.69230769230762" y="137.5" />
+    </edge>
+    <edge source="combattool.view.UserInterface" target="combattool.model.GameCharacter">
+      <point x="0.0" y="-136.0" />
+      <point x="2508.525" y="365.0" />
+      <point x="1320.3561645299137" y="365.0" />
+      <point x="124.23076923076928" y="137.5" />
+    </edge>
+    <edge source="combattool.model.MultiTarget" target="combattool.model.TargetBehaviour">
+      <point x="110.66666666666669" y="-48.5" />
+      <point x="276.66666666666674" y="1386.0" />
+      <point x="257.6340130876065" y="1386.0" />
+      <point x="-83.0" y="71.0" />
+    </edge>
+    <edge source="combattool.controller.CharacterFactory" target="combattool.model.NonPlayer">
+      <point x="174.75" y="-49.0" />
+      <point x="1511.775" y="812.0" />
+      <point x="1663.775" y="812.0" />
+      <point x="-72.75" y="26.0" />
+    </edge>
+    <edge source="combattool.controller.GameController" target="combattool.view.UserInterface">
+      <point x="22.923076923076906" y="-71.0" />
+      <point x="1717.448076923077" y="1523.0" />
+      <point x="2461.4" y="1523.0" />
+      <point x="-47.125" y="136.0" />
+    </edge>
+    <edge source="combattool.controller.ReadFile" target="combattool.controller.AbilityFactory">
+      <point x="124.0" y="-48.0" />
+      <point x="1704.525" y="1164.0" />
+      <point x="2002.275" y="1164.0" />
+      <point x="-99.25" y="49.0" />
+    </edge>
+    <edge source="combattool.controller.Main" target="combattool.controller.GameController">
+      <point x="-46.5" y="-26.0" />
+      <point x="1648.025" y="1760.0" />
+      <point x="1620.025" y="1760.0" />
+      <point x="-74.5" y="71.0" />
+    </edge>
+    <edge source="combattool.controller.GameController" target="combattool.controller.CharacterController">
+      <point x="-68.76923076923072" y="-71.0" />
+      <point x="1625.7557692307694" y="1543.0" />
+      <point x="929.4820178952982" y="1543.0" />
+      <point x="-144.0" y="37.0" />
+    </edge>
+    <edge source="combattool.controller.CharacterController" target="combattool.model.GameCharacter">
+      <point x="-28.800000000000182" y="-37.0" />
+      <point x="1044.682017895298" y="1386.0" />
+      <point x="1032.15" y="1386.0" />
+      <point x="1032.15" y="405.0" />
+      <point x="1171.2792414529904" y="405.0" />
+      <point x="-24.84615384615381" y="137.5" />
+    </edge>
+    <edge source="combattool.controller.GameController" target="combattool.model.Ability">
+      <point x="137.53846153846143" y="-71.0" />
+      <point x="1832.0634615384615" y="1573.0" />
+      <point x="3339.3923464209397" y="1573.0" />
+      <point x="3339.3923464209397" y="295.0" />
+      <point x="2897.8476175213664" y="295.0" />
+      <point x="78.375" y="92.5" />
+    </edge>
+    <edge source="combattool.controller.AbilityFactory" target="combattool.model.Ability">
+      <point x="0.0" y="-49.0" />
+      <point x="2101.525" y="812.0" />
+      <point x="2048.475679754273" y="812.0" />
+      <point x="2048.475679754273" y="445.0" />
+      <point x="2783.8476175213664" y="445.0" />
+      <point x="-35.625" y="92.5" />
+    </edge>
+    <edge source="combattool.controller.CharacterFactory" target="combattool.model.Player">
+      <point x="-174.75" y="-49.0" />
+      <point x="1162.275" y="812.0" />
+      <point x="1188.525" y="812.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="combattool.controller.CharacterController" target="combattool.model.Ability">
+      <point x="28.799999999999955" y="-37.0" />
+      <point x="1102.2820178952982" y="1376.0" />
+      <point x="1043.15" y="1376.0" />
+      <point x="1043.15" y="415.0" />
+      <point x="2741.0976175213664" y="415.0" />
+      <point x="-78.375" y="92.5" />
+    </edge>
+    <edge source="combattool.controller.CharacterController" target="combattool.view.UserInterface">
+      <point x="201.5999999999999" y="-37.0" />
+      <point x="1275.0820178952981" y="1376.0" />
+      <point x="2383.1830488782048" y="1376.0" />
+      <point x="2383.1830488782048" y="1174.0" />
+      <point x="2367.15" y="1174.0" />
+      <point x="-141.375" y="136.0" />
+    </edge>
+    <edge source="combattool.controller.GameController" target="combattool.model.Team">
+      <point x="-114.61538461538476" y="-71.0" />
+      <point x="1579.9096153846153" y="1563.0" />
+      <point x="706.5" y="1563.0" />
+      <point x="706.5" y="1144.0" />
+      <point x="715.2358640491443" y="1144.0" />
+      <point x="-24.84615384615381" y="115.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4682799203055245" x="1338.2843890834536" y="842.7453971116404" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
